@@ -15,6 +15,10 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+dependencyLocking {
+    lockAllConfigurations()
+}
+
 tasks.test {
     useJUnitPlatform()
 }
